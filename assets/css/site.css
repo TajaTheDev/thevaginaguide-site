@@ -148,3 +148,9 @@ p{margin:0}
 .brands{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
 .brands span{font-family:var(--display);font-size:26px;line-height:1;padding:18px 28px;border-radius:999px;background:#fff;border:3px solid var(--brown);color:var(--brown)}
 .brands--dark span{background:var(--cream);border-color:var(--cream)}
+
+/* testimonial screenshots */
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:20px;align-items:center}
+.shot{margin:0;border-radius:28px;padding:16px;display:flex;justify-content:center;transform:rotate(-1deg)}
+.shot:nth-child(even){transform:rotate(1deg)}
+.shot img{width:100%;height:auto;border-radius:16px;border:3px solid var(--brown);background:#fff}
