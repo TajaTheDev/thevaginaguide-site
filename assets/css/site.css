@@ -143,3 +143,8 @@ p{margin:0}
 .foot-links{display:flex;flex-wrap:wrap;gap:22px;font-weight:600}
 .foot-small{font-size:14px;max-width:900px;margin-top:32px}
 .foot-legal{display:flex;flex-wrap:wrap;gap:18px;font-size:14px;margin-top:20px}
+
+/* brand strip */
+.brands{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.brands span{font-family:var(--display);font-size:26px;line-height:1;padding:18px 28px;border-radius:999px;background:#fff;border:3px solid var(--brown);color:var(--brown)}
+.brands--dark span{background:var(--cream);border-color:var(--cream)}
