@@ -6,7 +6,7 @@ const CONFIG = {
   // Kit form IDs (the number in your Kit embed code)
   forms: {
     decoder: "10163456",   // Discharge Decoder (live)
-    waitlist: "",          // App waitlist (The V Guide + Vulvy)
+    waitlist: "10169489",  // App waitlist (The V Guide + Vulvy)
     ingredients: "",       // 15 Ingredients guide + wallet card
     doctor: ""             // Doctor Visit Prep Checklist
   },
@@ -16,6 +16,8 @@ const CONFIG = {
     yeast: "https://the-vagina-guide.kit.com/products/yeast-infection-survival-guide",
     period: "https://the-vagina-guide.kit.com/products/the-period-prep-blueprint",
     pelvic: "https://the-vagina-guide.kit.com/products/the-pelvic-floor-strength-guide",
+    uti: "",               // UTI Prevention Playbook: paste Kit product link
+    odor: "",              // Vaginal Odor & pH Guide: paste Kit product link
     bundle: "https://the-vagina-guide.kit.com/products/the-complete-v-guide-bundle"
   }
 };
