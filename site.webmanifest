@@ -1,0 +1,19 @@
+{
+ "name": "The Vagina Guide",
+ "short_name": "V Guide",
+ "icons": [
+  {
+   "src": "/favicon-192x192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icon-512x512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ],
+ "theme_color": "#F84E37",
+ "background_color": "#FFF9EB",
+ "display": "browser"
+}
