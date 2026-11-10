@@ -165,3 +165,5 @@ p{margin:0}
 .product__cover{display:flex;justify-content:center}
 .product__cover img{max-width:200px!important}
 @media (max-width:600px){.product__cover img{max-width:160px!important}}
+.product__cover img,.bundle img,.shot img{height:auto!important}
+.product__cover img{width:100%;aspect-ratio:816/1056;object-fit:cover}
