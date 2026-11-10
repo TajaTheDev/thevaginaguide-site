@@ -6,7 +6,9 @@ const CONFIG = {
   // Kit form IDs (the number in your Kit embed code)
   forms: {
     decoder: "10163456",   // Discharge Decoder (live)
-    waitlist: ""           // App waitlist: make a 2nd Kit form, paste its number here
+    waitlist: "",          // App waitlist (The V Guide + Vulvy)
+    ingredients: "",       // 15 Ingredients guide + wallet card
+    doctor: ""             // Doctor Visit Prep Checklist
   },
   // Kit Commerce product links. Leave "" to show "Coming soon"
   checkout: {
@@ -49,7 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
       // No Kit form yet: send the visitor's interest by email instead
       form.addEventListener("submit", e => {
         e.preventDefault();
-        msg.textContent = "The waitlist opens very soon. Follow @thevaginaguide on TikTok so you don't miss it!";
+        msg.textContent = form.dataset.kit === "waitlist"
+          ? "The waitlist opens very soon. Follow @thevaginaguide on TikTok so you don't miss it!"
+          : "This freebie is almost ready. Follow @thevaginaguide on TikTok so you don't miss it!";
       });
       return;
     }
@@ -70,6 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const json = await res.json().catch(() => ({}));
         if (res.ok && json.status !== "failed") {
           if (form.dataset.redirect) { location.href = form.dataset.redirect; return; }
+          if (window.pintrk) pintrk("track", "lead", { lead_type: form.dataset.kit });
           form.classList.add("done");
           msg.textContent = "You're in! Check your email and tap the confirm button. 💌";
         } else { throw new Error("rejected"); }
