@@ -10,9 +10,11 @@ const CONFIG = {
   },
   // Kit Commerce product links. Leave "" to show "Coming soon"
   checkout: {
-    bv: "",
-    yeast: "",
-    period: ""
+    bv: "https://the-vagina-guide.kit.com/products/bv-break-the-cycle",
+    yeast: "https://the-vagina-guide.kit.com/products/yeast-infection-survival-guide",
+    period: "https://the-vagina-guide.kit.com/products/the-period-prep-blueprint",
+    pelvic: "https://the-vagina-guide.kit.com/products/the-pelvic-floor-strength-guide",
+    bundle: "https://the-vagina-guide.kit.com/products/the-complete-v-guide-bundle"
   }
 };
 
