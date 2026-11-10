@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // No Kit form yet: send the visitor's interest by email instead
       form.addEventListener("submit", e => {
         e.preventDefault();
-        msg.textContent = "The waitlist opens very soon. Follow @tajamoxey1 on TikTok so you don't miss it!";
+        msg.textContent = "The waitlist opens very soon. Follow @thevaginaguide on TikTok so you don't miss it!";
       });
       return;
     }
