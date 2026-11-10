@@ -16,8 +16,8 @@ const CONFIG = {
     yeast: "https://the-vagina-guide.kit.com/products/yeast-infection-survival-guide",
     period: "https://the-vagina-guide.kit.com/products/the-period-prep-blueprint",
     pelvic: "https://the-vagina-guide.kit.com/products/the-pelvic-floor-strength-guide",
-    uti: "",               // UTI Prevention Playbook: paste Kit product link
-    odor: "",              // Vaginal Odor & pH Guide: paste Kit product link
+    uti: "https://the-vagina-guide.kit.com/products/uti-prevention-playbook",
+    odor: "https://the-vagina-guide.kit.com/products/vaginal-odor-p-h-guide",
     bundle: "https://the-vagina-guide.kit.com/products/the-complete-v-guide-bundle"
   }
 };
