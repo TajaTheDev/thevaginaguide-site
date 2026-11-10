@@ -83,6 +83,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  /* ---------- peek inside previews ---------- */
+  document.querySelectorAll("[data-peek]").forEach(b => b.addEventListener("click", () => {
+    const d = document.getElementById(b.dataset.peek); if (d && d.showModal) d.showModal();
+  }));
+  document.querySelectorAll("dialog.peek").forEach(d => {
+    d.querySelector("[data-close]").addEventListener("click", () => d.close());
+    d.addEventListener("click", e => { if (e.target === d) d.close(); });
+  });
+
   /* ---------- footer year ---------- */
   document.querySelectorAll("[data-year]").forEach(el => el.textContent = new Date().getFullYear());
 });
