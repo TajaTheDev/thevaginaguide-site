@@ -215,3 +215,8 @@ p{margin:0}
 .sources a{word-break:break-word}
 .chip--sm{font-size:13px;padding:6px 12px;background:#FFF0F7}
 .disclaimer{font-size:14px;opacity:.85;margin-top:24px!important}
+.freebie{display:flex;gap:22px;align-items:center;border:3px solid var(--brown);border-radius:28px;padding:22px 24px;margin:0 0 32px;box-shadow:8px 8px 0 var(--brown)}
+.freebie img{width:120px;height:auto;border:3px solid var(--brown);border-radius:10px;transform:rotate(-3deg);flex:none;background:#fff}
+.freebie p{margin:0 0 8px}
+.freebie__title{font-family:var(--display);font-size:clamp(24px,3vw,30px);line-height:1.05}
+@media (max-width:560px){.freebie{flex-direction:column;align-items:flex-start}.freebie img{width:110px}}
