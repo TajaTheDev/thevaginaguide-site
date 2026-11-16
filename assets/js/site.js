@@ -37,7 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ---------- checkout buttons ---------- */
   document.querySelectorAll("[data-checkout]").forEach(a => {
     const url = CONFIG.checkout[a.dataset.checkout];
-    if (url) { a.href = url; }
+    if (url) {
+      a.href = url;
+      a.addEventListener("click", () => {
+        const PRICES = { bv: 19, yeast: 19, period: 17, pelvic: 24, uti: 17, odor: 17, bundle: 45 };
+        if (window.fbq) fbq("track", "InitiateCheckout", { content_ids: [a.dataset.checkout], content_type: "product", value: PRICES[a.dataset.checkout] || 0, currency: "USD" });
+      });
+    }
     else {
       a.textContent = "Coming soon";
       a.setAttribute("aria-disabled", "true");
@@ -77,6 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (res.ok && json.status !== "failed") {
           if (form.dataset.redirect) { location.href = form.dataset.redirect; return; }
           if (window.pintrk) pintrk("track", "lead", { lead_type: form.dataset.kit });
+          if (window.fbq) fbq("track", "Lead", { content_name: form.dataset.kit });
           form.classList.add("done");
           msg.textContent = "You're in! Check your email and tap the confirm button. 💌";
         } else { throw new Error("rejected"); }
