@@ -220,3 +220,12 @@ p{margin:0}
 .freebie p{margin:0 0 8px}
 .freebie__title{font-family:var(--display);font-size:clamp(24px,3vw,30px);line-height:1.05}
 @media (max-width:560px){.freebie{flex-direction:column;align-items:flex-start}.freebie img{width:110px}}
+
+/* guide page: outcomes + sticky buy bar */
+.outcomes{list-style:none;padding:0;margin:0;display:grid;gap:8px;font-weight:700;font-size:18px}
+.outcomes li{padding-left:34px;position:relative}
+.outcomes li::before{content:"✓";position:absolute;left:0;top:-1px;width:24px;height:24px;border-radius:50%;background:var(--lime);border:2px solid var(--brown);display:grid;place-items:center;font-size:14px}
+.buybar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--cream);border-top:3px solid var(--brown)}
+.buybar span{font-size:15px;line-height:1.2}
+.buybar .btn{padding:12px 22px}
+@media (max-width:900px){.buybar{display:flex}body{padding-bottom:76px}}
