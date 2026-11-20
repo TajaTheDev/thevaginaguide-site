@@ -21,7 +21,7 @@ const CONFIG = {
     uti: "https://the-vagina-guide.kit.com/products/uti-prevention-playbook",
     odor: "https://the-vagina-guide.kit.com/products/vaginal-odor-p-h-guide",
     postpartum: "https://the-vagina-guide.kit.com/products/postpartum-repair",
-    menopause: "",    // Strong & Supple After 50 ($29) — paste Kit link
+    menopause: "https://the-vagina-guide.kit.com/products/strong-supple-after-50",
     sexual: "",       // Sexual Wellness Guide ($29) — paste Kit link
     bundle: "https://the-vagina-guide.kit.com/products/the-complete-v-guide-bundle"
   }
