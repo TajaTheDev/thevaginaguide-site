@@ -18,6 +18,9 @@ const CONFIG = {
     pelvic: "https://the-vagina-guide.kit.com/products/the-pelvic-floor-strength-guide",
     uti: "https://the-vagina-guide.kit.com/products/uti-prevention-playbook",
     odor: "https://the-vagina-guide.kit.com/products/vaginal-odor-p-h-guide",
+    postpartum: "",   // Postpartum Repair ($29) — paste Kit link
+    menopause: "",    // Strong & Supple After 50 ($29) — paste Kit link
+    sexual: "",       // Sexual Wellness Guide ($29) — paste Kit link
     bundle: "https://the-vagina-guide.kit.com/products/the-complete-v-guide-bundle"
   }
 };
@@ -40,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (url) {
       a.href = url;
       a.addEventListener("click", () => {
-        const PRICES = { bv: 19, yeast: 19, period: 17, pelvic: 24, uti: 17, odor: 17, bundle: 45 };
+        const PRICES = { bv: 19, yeast: 19, period: 17, pelvic: 24, uti: 17, odor: 17, postpartum: 29, menopause: 29, sexual: 29, bundle: 45 };
         if (window.fbq) fbq("track", "InitiateCheckout", { content_ids: [a.dataset.checkout], content_type: "product", value: PRICES[a.dataset.checkout] || 0, currency: "USD" });
       });
     }
