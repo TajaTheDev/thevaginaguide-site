@@ -20,7 +20,7 @@ const CONFIG = {
     pelvic: "https://the-vagina-guide.kit.com/products/the-pelvic-floor-strength-guide",
     uti: "https://the-vagina-guide.kit.com/products/uti-prevention-playbook",
     odor: "https://the-vagina-guide.kit.com/products/vaginal-odor-p-h-guide",
-    postpartum: "",   // Postpartum Repair ($29) — paste Kit link
+    postpartum: "https://the-vagina-guide.kit.com/products/postpartum-repair",
     menopause: "",    // Strong & Supple After 50 ($29) — paste Kit link
     sexual: "",       // Sexual Wellness Guide ($29) — paste Kit link
     bundle: "https://the-vagina-guide.kit.com/products/the-complete-v-guide-bundle"
