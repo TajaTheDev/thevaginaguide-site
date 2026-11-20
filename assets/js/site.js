@@ -22,7 +22,7 @@ const CONFIG = {
     odor: "https://the-vagina-guide.kit.com/products/vaginal-odor-p-h-guide",
     postpartum: "https://the-vagina-guide.kit.com/products/postpartum-repair",
     menopause: "https://the-vagina-guide.kit.com/products/strong-supple-after-50",
-    sexual: "",       // Sexual Wellness Guide ($29) — paste Kit link
+    sexual: "https://the-vagina-guide.kit.com/products/sexual-wellness-guide",
     bundle: "https://the-vagina-guide.kit.com/products/the-complete-v-guide-bundle"
   }
 };
