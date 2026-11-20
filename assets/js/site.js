@@ -9,7 +9,8 @@ const CONFIG = {
     waitlist: "10169489",  // App waitlist (The V Guide + Vulvy)
     ingredients: "",       // 15 Ingredients guide + wallet card
     doctor: "",            // Doctor Visit Prep Checklist
-    menopause: ""          // Menopause Down There Checklist — paste Kit form ID
+    menopause: "",         // Menopause Down There Checklist — paste Kit form ID
+    postpartum: ""         // Postpartum Body Check — paste Kit form ID
   },
   // Kit Commerce product links. Leave "" to show "Coming soon"
   checkout: {
