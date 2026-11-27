@@ -1,53 +1,66 @@
 User-agent: *
 Allow: /
 Disallow: /thanks/
+Disallow: /social/
 
 User-agent: GPTBot
 Allow: /
 Disallow: /thanks/
+Disallow: /social/
 
 User-agent: OAI-SearchBot
 Allow: /
 Disallow: /thanks/
+Disallow: /social/
 
 User-agent: ChatGPT-User
 Allow: /
 Disallow: /thanks/
+Disallow: /social/
 
 User-agent: ClaudeBot
 Allow: /
 Disallow: /thanks/
+Disallow: /social/
 
 User-agent: Claude-SearchBot
 Allow: /
 Disallow: /thanks/
+Disallow: /social/
 
 User-agent: Claude-User
 Allow: /
 Disallow: /thanks/
+Disallow: /social/
 
 User-agent: PerplexityBot
 Allow: /
 Disallow: /thanks/
+Disallow: /social/
 
 User-agent: Perplexity-User
 Allow: /
 Disallow: /thanks/
+Disallow: /social/
 
 User-agent: Google-Extended
 Allow: /
 Disallow: /thanks/
+Disallow: /social/
 
 User-agent: Applebot-Extended
 Allow: /
 Disallow: /thanks/
+Disallow: /social/
 
 User-agent: Bingbot
 Allow: /
 Disallow: /thanks/
+Disallow: /social/
 
 User-agent: Googlebot
 Allow: /
 Disallow: /thanks/
+Disallow: /social/
 
 Sitemap: https://thevaginaguide.com/sitemap.xml
